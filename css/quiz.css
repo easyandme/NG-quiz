@@ -37,7 +37,7 @@ body { background-color: #000; padding: 20px; }
 #myQuiz .progress {
 	width: 550px;
 	position: absolute;
-	top: 160px;
+	top: 110px;
 	left: 40px;
 }
 #myQuiz .progress div {
@@ -81,8 +81,9 @@ body { background-color: #000; padding: 20px; }
     left: 650px;
     width: 550px; 
 }
-#myQuiz .intro p {
+#myQuiz .intro p.introtext {
 	margin: 0px 0px 40px 0px;
+	width: 260px;
 }
 
 /* Questions */
@@ -239,33 +240,34 @@ body { background-color: #000; padding: 20px; }
 
     #myQuiz .progress {
     	width: 300px;
-    	top: 110px;
+    	top: 60px;
     	left: 25px;
     }
     #myQuiz .progress div {
-    	width: 25px;
-    	height: 25px;
+    	width: 20px;
+    	height: 20px;
     	margin-right: 20px;
     }
     #myQuiz .progress div::after {
-    	width: 53px;
+    	width: 49px;
     	height: 33px;
     	top: -30px;
     }
     #myQuiz .intro {
     	width: 330px;
-    	top: 135px;
+    	top: 100px;
     	left: 330px;
     }
 
     #myQuiz .question {
     	width: 300px;
-    	top: 135px;
+    	top: 95px;
     	left: 330px;
     }
     #myQuiz .question .txt {
     	font-size: 1.4em;
     	margin-bottom: 15px;
+    	width: 280px;
     }
     #myQuiz .question .ans {
     	font-size: 1em;
