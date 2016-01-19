@@ -1,5 +1,5 @@
 
-body { background-color: #fff; padding: 20px; }
+body { background-color: #000; padding: 20px; }
 
 #myQuiz {
    font-family: Segoe UI, Microsoft Yahei, sans-serif; font-size: 16px; font-weight: 400;
@@ -199,7 +199,7 @@ body { background-color: #fff; padding: 20px; }
 }
 
 #myQuiz .active, #myQuiz .inactive {
-	transition: left 1.5s ease-in-out;
+	transition: left 1.5s cubic-bezier(.16,.7,.42,.96);
 }
 #myQuiz .active {
 	left: 40px;
@@ -229,8 +229,9 @@ body { background-color: #fff; padding: 20px; }
 	#myQuiz h1 {
 		width: 300px;
 		font-size: 1.3em;
-		top: 25px;
-		left: 25px;
+		top: 0px;
+	    left: 15px;
+	    position: absolute;
 	}
 	#myQuiz h1 span {line-height: 43px;}
 	#myQuiz h2 { margin: 0px; }

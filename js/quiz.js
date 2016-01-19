@@ -1,4 +1,8 @@
-(function(){
+(function(){ 
+  
+  angular.module('myQuiz', []).run(function() {
+    FastClick.attach(document.body);
+  });
 
 	var app = angular.module('myQuiz',[]);
 
