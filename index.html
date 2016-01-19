@@ -48,7 +48,7 @@
     	<div class="results {{totalQuestions === activeQuestion?'active':inactive}}">
     		<h3>Results</h3>
     		<p>You scored {{percentage}}% by correctly answering {{score}} of {{totalQuestions}} questions.</p>
-    		<div class="share" ng-bind-html="createShareLinks(percentage)"> 
+    		<div class="share" ng-click="addOverlay()" ng-bind-html="createShareLinks(percentage)"> 
     		</div>
     	</div>
     </div>

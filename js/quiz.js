@@ -1,5 +1,5 @@
 (function(){ 
-  
+
   angular.module('myQuiz', []).run(function() {
     FastClick.attach(document.body);
   });
@@ -52,14 +52,28 @@
           
           var url = 'http://aquiz.cn/quiz2'
 
-          var emailLink = '<a class="btn email" href="#">Email a friend</a>'
+          var emailLink = '<a class="btn email">联系开发者</a>'
 
-          var wechatLink = '<a class="btn wechat" target="_blank" href="#">联系开发者</a>';    
+          var wechatLink = '<a class="btn wechat">联系开发者</a>';    
            
           var newMarkup = emailLink + wechatLink;
 
-          return $sce.trustAsHtml(newMarkup);
-        
+          return $sce.trustAsHtml(newMarkup); 
+       }
+       
+       $scope.addOverlay = function(){  
+        var myOverlay = document.createElement('div');
+        myOverlay.id = 'overlay';
+        document.body.appendChild(myOverlay); 
+        myOverlay.style.position = 'absolute';
+        myOverlay.style.top = 0;  
+        myOverlay.style.opacity = 0.8;  
+        myOverlay.style.width = window.innerWidth + 'px';
+        myOverlay.style.height = window.innerHeight + 'px';
+        myOverlay.style.top = window.pageYOffset + 'px';
+        myOverlay.style.left = window.pageXOffset + 'px';
+        myOverlay.style.zIndex = 999;
+        myOverlay.style.backgroundColor = '#000';  
        }
 
 	}]);
