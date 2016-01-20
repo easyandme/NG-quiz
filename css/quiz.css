@@ -2,7 +2,7 @@
 body { background-color: #FDF2F2; padding: 20px; }
 
 #myQuiz {
-   font-family: Segoe UI, Microsoft Yahei, sans-serif; font-size: 16px; font-weight: 400;
+   font-family: Segoe UI, Microsoft Yahei, Helvetia Neue, Helvetica, sans-serif; font-size: 16px; font-weight: 400;
    width: 650px; height: 650px;
    position: relative;
    overflow: hidden;
@@ -41,12 +41,15 @@ body { background-color: #FDF2F2; padding: 20px; }
 	padding: 5px 15px;
 	border-radius: 6px;
 }
+#myQuiz .btn.why {
+    background-color: #3899C5;
+}
 
 /* Progress Bar */
 #myQuiz .progress {
 	width: 550px;
 	position: absolute;
-	top: 110px;
+	top: 60px;
 	left: 40px;
 }
 #myQuiz .progress div {
@@ -99,7 +102,7 @@ body { background-color: #FDF2F2; padding: 20px; }
 #myQuiz .question {
 	width: 550px;
 	position: absolute;
-	top: 225px;
+	top: 145px;
 	left: 660px;
 }
 #myQuiz .question .txt {
@@ -153,8 +156,8 @@ body { background-color: #FDF2F2; padding: 20px; }
 }
 
 #myQuiz .question .ans.image {
-	min-height: 60px;
-	padding: 0px;
+/*	min-height: 60px;
+	padding: 0px;  */
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 }
@@ -251,7 +254,7 @@ body { background-color: #FDF2F2; padding: 20px; }
 
     #myQuiz .progress {
     	width: 300px;
-    	top: 60px;
+    	top: 20px;
     	left: 25px;
     }
     #myQuiz .progress div {
@@ -272,7 +275,7 @@ body { background-color: #FDF2F2; padding: 20px; }
 
     #myQuiz .question {
     	width: 90%;
-    	top: 95px;
+    	top: 55px;
     	left: 100%;
     }
     #myQuiz .question .txt {
@@ -288,11 +291,11 @@ body { background-color: #FDF2F2; padding: 20px; }
 	    min-width: 160px;
     }
     #myQuiz .question .ans.image {
-    	min-height: 45px;
-    	background-size: auto 45px;
+    /*	min-height: 45px;
+    	background-size: auto 45px; */
     }
     #myQuiz .question .ans.image:hover {
-    	background-color: #000;
+		background-color: rgba(238,198,102,.2);
     }
 
     #myQuiz .results {

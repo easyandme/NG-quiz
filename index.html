@@ -6,12 +6,12 @@
 	<meta http-equiv="Cache-Control" content="no-transform">
 	<meta name="keywords" content="blank">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
-	<title>关于买票你需要知道的一切</title>
+	<title>关于信用卡，你应该知道的事</title>
 	<link rel="stylesheet" type="text/css" href="css/quiz.css">
 </head>
 <body>
     <div id="myQuiz" ng-controller="QuizController">
-    	<h1>关于<span></span>你需要知道的一切</h1>
+    	<h1 ng-show="activeQuestion === -1">关于<span>信用卡</span><br>你应该知道的事</h1>
     	<div class="progress">
     	    <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}
             {{myQuestion.questionState === 'answered'?'answered':'unanswered'}}
@@ -20,7 +20,7 @@
     	</div>
     	<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
     		<h2></h2>
-    		<p class="introtext">Click begin to test your knowledge of Saturn</p>
+    		<p class="introtext">手头的信用卡，你真的足够了解它吗？</p>
     	    <p class="btn" ng-click="activeQuestion = 0">开始</p>
     	</div>
     	<div class="question
@@ -33,16 +33,18 @@
             image:Answer.image,
             selected:isSelected($parent.$index,$index), correct: isCorrect($parent.$index,$index)
             }"
-            ng-style="{ 'background-image':'url({{Answer.image}})' }"
+            ng-style="{ 'background-image':'url({{Answer.image}})','background-position':'{{Answer.pos}}','background-size':'{{Answer.size}}' }"
             ng-click="selectAnswer($parent.$index,$index)"
             ng-repeat="Answer in myQuestions[$index].answers">
             {{Answer.text}}
             </p> 
     		<div class="feedback">
-    			<p ng-show="myQuestion.correctness === 'correct'">You're <strong>correct</strong>.</p>
-    			<p ng-show="myQuestion.correctness === 'incorrect'">Oops! That is not correct.</p>
-    		    <p>{{myQuestion.feedback}}</p>
-    		    <div class="btn" ng-click="selectContinue()">Continue</div>
+    			<p ng-show="myQuestion.correctness === 'correct'">回答<strong>正确</strong>.</p>
+    			<p ng-show="myQuestion.correctness === 'incorrect'">哎呦错啦！</p>
+    		    <div ng-bind-html="myQuestion.feedback | html"></div>
+                <div class="btn" ng-click="selectContinue()">下一题</div>
+                <div class="btn why" ng-click="showInfo = !showInfo">为什么？</div>
+                <div ng-bind-html="myQuestion.info | html" ng-show="showInfo"></div>
     		</div>
     	</div>
     	<div class="results {{totalQuestions === activeQuestion?'active':inactive}}">
@@ -54,5 +56,10 @@
     </div>
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/quiz.js"></script>
+<script type="text/javascript">
+    document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('overlay').remove();
+        });
+</script>
 </body>
 </html>

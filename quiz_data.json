@@ -1,13 +1,15 @@
 [
   {
-	  	"question" : "Saturn is the _____ planet from the Sun.",
+	  	"question" : "卡号首位数为5的是以下哪种信用卡?",
 	  	"answers"   : [
-	        {"id": 0, "text" : "Fourth"},
-	        {"id": 1, "text" : "Fifth"},
-	        {"id": 2, "text" : "Seventh"},
-	        {"id": 3, "text" : "Eighth"}    
+	        {"id": 0, "text" : "Visa", "image" : "images/visa_icon.png", "pos" : "2.85em 50%", "size" : "30px"},
+	        {"id": 1, "text" : "MasterCard", "image" : "images/mc_icon.png", "pos" : "6.35em 50%", "size" : "30px"},
+	        {"id": 2, "text" : "JCB", "image" : "images/jcb_icon.gif", "pos" : "2.75em 50%", "size" : "30px"},
+	        {"id": 3, "text" : "American Express", "image" : "images/ae_icon.png", "pos" : "8.75em 50%", "size" : "30px"}    
 	  	],
-	  	"correct"  : 1
+	  	"correct"  : 1,
+		"feedback" : "<p>MasterCard信用卡卡号的首位数是5</p><p>Visa信用卡卡号的首位数为4</p>",
+		"info" : "<br><p>MasterCard信用卡卡号的首位数是5</p><p>Visa信用卡卡号的首位数为4</p>"
   },
   {
 		"question" : "Which image shows a close-up of Saturn?",

@@ -1,10 +1,16 @@
 (function(){ 
 
   angular.module('myQuiz', []).run(function() {
-    FastClick.attach(document.body);
-  });
+      FastClick.attach(document.body);
+});
 
 	var app = angular.module('myQuiz',[]);
+
+  app.filter('html', ['$sce', function ($sce) { 
+    return function (text) {
+        return $sce.trustAsHtml(text);
+    };    
+}])
 
 	app.controller('QuizController', ['$scope','$http','$sce',function($scope,$http,$sce){
     
@@ -63,7 +69,7 @@
        
        $scope.addOverlay = function(){  
         var myOverlay = document.createElement('div');
-        myOverlay.id = 'overlay';
+        myOverlay.id = 'overlay'; 
         document.body.appendChild(myOverlay); 
         myOverlay.style.position = 'absolute';
         myOverlay.style.top = 0;  
@@ -75,6 +81,8 @@
         myOverlay.style.zIndex = 999;
         myOverlay.style.backgroundColor = '#000';  
        }
+       
+          
 
 	}]);
 
