@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Maxim_Xu">
 	<meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="format-detection" content="telephone=no">
 	<meta name="keywords" content="blank">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
 	<title>关于信用卡，你应该知道的事</title>                                        
@@ -44,7 +45,7 @@
     			<p ng-show="myQuestion.correctness === 'incorrect'"><strong>哎呦错啦！</strong></p>
     		    <div ng-bind-html="myQuestion.feedback | html"></div>
                 <div class="btn" ng-click="selectContinue()">下一题</div>
-                <div class="btn why" ng-click="showInfo = !showInfo" ng-hide="myQuestion.info === undefined">为什么？</div>
+                <div class="btn why" ng-click="showInfo = !showInfo" ng-hide="myQuestion.info === undefined">{{myQuestion.button}}</div>
                 <div ng-bind-html="myQuestion.info | html" ng-show="showInfo"></div>
     		</div>
     	</div>

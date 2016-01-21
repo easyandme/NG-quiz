@@ -8,7 +8,8 @@
 	        {"id": 3, "text" : "American Express", "image" : "images/ae_icon.png", "pos" : "9em 50%", "size" : "30px"}    
 	  	],
 	  	"correct"  : 1,
-		"feedback" : "<p>MasterCard万事达卡卡号的首位数是5</p><p>Visa卡卡号的首位数为4</p>",
+		"button" : "为什么?",
+		"feedback" : "<p>MasterCard万事达卡卡号的首位数是5.</p><p>Visa卡卡号的首位数为4.</p>",
 		"info" : "<br><div class=\"infodiv\"><p>银行卡卡号第一位数字是<strong>主要产业标识符(MII)</strong>，如下表所示：</p><table class=\"table-bordered table-striped\"><tbody><tr><th>1、2</th><th>航空</th></tr><tr><th>3</th><th>运输、娱乐和金融财务</th></tr><tr><th>4、5</th><th>金融服务</th></tr><tr><th>6</th><th>商业和金融财务</th></tr><tr><th>7</th><th>石油和其他未来行业使用</th></tr><tr><th>8</th><th>医疗、电信和其他未来行业使用</th></tr><tr><th>9</th><th>由本国标准机构分配</th></tr></tbody></table><p>不同卡号对应不同的发行机构。例如中国银联发行的卡一定是62开头；而Visa信用卡的卡号会是4开头，而万事达Matercard的卡号一般以51、52、53、54、55打头。</p><div>"
     },
 	{
@@ -20,20 +21,20 @@
 			{"id"  : 3, "text" : "2016年2月的某一天"}
 		],
 		"correct"  : 2,
-		"feedback" : "<p>信用卡有效期一般截止在卡上显示月份的最后一天（24时）。</p>"
+		"feedback" : "<p>信用卡有效期一般截止在卡上显示月份的最后一天（24时）。</p><p>别忘了今年是闰年哦，所以2月有29天~</p>"
 	},
 	{
-		"question" : "What is the name of Saturn's largest moon?",
+		"question" : "以下哪种信用卡消费情况可以享受最长的免息期?",
 		"answers"  : [
-			{"id"  : 0, "text" : "Hercules"},
-			{"id"  : 1, "text" : "Europa"},
-			{"id"  : 2, "text" : "Goliath"},
-			{"id"  : 3, "text" : "Zeus"},
-			{"id"  : 4, "text" : "Titan"},
-			{"id"  : 5, "text" : "Triton"}
+			{"id"  : 0, "text" : "账单日消费"},
+			{"id"  : 1, "text" : "还款日消费"},
+			{"id"  : 2, "text" : "当月账单日和当月还款日之间消费"},
+			{"id"  : 3, "text" : "当月还款日和下月账单日之间消费"}
 		],
-		"correct"  : 4,
-		"feedback" : "Though the names seem similar, Triton orbits the planet Neptune."
+		"correct"  : 0,
+		"button" : "如何延长免息期?",
+		"feedback" : "在账单日当天的消费一般计入下一个账单周期。不难理解，在每个账单周期的头一天消费可以享受最久的免息期。",
+	    "info" : "<br><div class=\"infodiv\"><p>我国各大银行的免息期一般为48天~56天,大部分银行允许有限制地修改账单日。</p></div>"
 	},
     {
 		"question" : "Which image shows a close-up of Saturn?",

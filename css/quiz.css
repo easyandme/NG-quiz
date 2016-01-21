@@ -43,6 +43,7 @@ body { background-color: #FDF2F2; padding: 20px; }
 }
 #myQuiz .btn.why {
     background-color: #3899C5;
+    padding-right: 6px;
 }
 
 /* Progress Bar */
