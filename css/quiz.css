@@ -30,7 +30,7 @@ body { background-color: #FDF2F2; padding: 20px; }
 	font-weight: 100;
 }
 #myQuiz p {
-	margin: 0px 0px 14px 0px;
+	margin: 6px 0px 6px 0px;
 }
 #myQuiz .btn {
 	display: inline-block; 
@@ -228,6 +228,21 @@ body { background-color: #FDF2F2; padding: 20px; }
 #myQuiz .results {
 	top: 650px !important;
 	left: 40px !important;
+	visibility: hidden;
+}
+
+/* Table */
+table {
+	width: 100%;
+    margin: 10px 1px;
+}
+th {
+    font-size: .8em;
+}
+.infodiv {
+    border: 1px solid #E0D8D3;
+    padding: 6px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 650px) {
@@ -281,14 +296,14 @@ body { background-color: #FDF2F2; padding: 20px; }
     #myQuiz .question .txt {
     	font-size: 1.25em;
 	    margin-bottom: 15px;
-	    width: 220px;
+	    width: 250px;
     }
     #myQuiz .question .ans {
     	font-size: 1em;
     	padding: 5px 10px;
     	margin-bottom: 10px;
 	    width: 70%;
-	    min-width: 160px;
+	    min-width: 200px;
     }
     #myQuiz .question .ans.image {
     /*	min-height: 45px;

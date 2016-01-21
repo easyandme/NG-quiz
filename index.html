@@ -6,8 +6,9 @@
 	<meta http-equiv="Cache-Control" content="no-transform">
 	<meta name="keywords" content="blank">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
-	<title>关于信用卡，你应该知道的事</title>
-	<link rel="stylesheet" type="text/css" href="css/quiz.css">
+	<title>关于信用卡，你应该知道的事</title>                                        
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">                        
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
 </head>
 <body>
     <div id="myQuiz" ng-controller="QuizController">
@@ -40,10 +41,10 @@
             </p> 
     		<div class="feedback">
     			<p ng-show="myQuestion.correctness === 'correct'">回答<strong>正确</strong>.</p>
-    			<p ng-show="myQuestion.correctness === 'incorrect'">哎呦错啦！</p>
+    			<p ng-show="myQuestion.correctness === 'incorrect'"><strong>哎呦错啦！</strong></p>
     		    <div ng-bind-html="myQuestion.feedback | html"></div>
                 <div class="btn" ng-click="selectContinue()">下一题</div>
-                <div class="btn why" ng-click="showInfo = !showInfo">为什么？</div>
+                <div class="btn why" ng-click="showInfo = !showInfo" ng-hide="myQuestion.info === undefined">为什么？</div>
                 <div ng-bind-html="myQuestion.info | html" ng-show="showInfo"></div>
     		</div>
     	</div>
@@ -56,10 +57,5 @@
     </div>
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/quiz.js"></script>
-<script type="text/javascript">
-    document.getElementById('overlay').addEventListener('click', function() {
-            document.getElementById('overlay').remove();
-        });
-</script>
 </body>
 </html>
