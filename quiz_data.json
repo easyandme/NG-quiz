@@ -10,7 +10,7 @@
 	  	"correct"  : 1,
 		"button" : "为什么?",
 		"feedback" : "<p>MasterCard万事达卡卡号的首位数是5.</p><p>Visa卡卡号的首位数为4.</p>",
-		"info" : "<br><div class=\"infodiv\"><p>银行卡卡号第一位数字是<strong>主要产业标识符(MII)</strong>，如下表所示：</p><table class=\"table-bordered table-striped\"><tbody><tr><th>1、2</th><th>航空</th></tr><tr><th>3</th><th>运输、娱乐和金融财务</th></tr><tr><th>4、5</th><th>金融服务</th></tr><tr><th>6</th><th>商业和金融财务</th></tr><tr><th>7</th><th>石油和其他未来行业使用</th></tr><tr><th>8</th><th>医疗、电信和其他未来行业使用</th></tr><tr><th>9</th><th>由本国标准机构分配</th></tr></tbody></table><p>不同卡号对应不同的发行机构。例如中国银联发行的卡一定是62开头；而Visa信用卡的卡号会是4开头，而万事达Matercard的卡号一般以51、52、53、54、55打头。</p><div>"
+		"info" : "<br><div class=\"infodiv\"><p>银行卡卡号第一位数字是<strong>主要产业标识符(MII)</strong>，如下表所示：</p><table class=\"table-bordered table-striped\"><tbody><tr><th>1、2</th><th>航空</th></tr><tr><th>3</th><th>运输、娱乐和金融财务</th></tr><tr><th>4、5</th><th>金融服务</th></tr><tr><th>6</th><th>商业和金融财务</th></tr><tr><th>7</th><th>石油和其他未来行业使用</th></tr><tr><th>8</th><th>医疗、电信和其他未来行业使用</th></tr><tr><th>9</th><th>由本国标准机构分配</th></tr></tbody></table><p>不同卡号对应不同的发行机构。例如中国银联发行的卡一定是62开头；而Visa信用卡的卡号会是4开头，万事达Matercard的卡号一般以51、52、53、54、55打头。</p><div>"
     },
 	{
 		"question" : "小明的信用卡上刻着\"VALID THRU 02/16\"，这张卡的有效期截止到哪一天?",
