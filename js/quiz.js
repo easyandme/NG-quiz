@@ -4,7 +4,7 @@
       FastClick.attach(document.body);
 });
 
-	var app = angular.module('myQuiz',[]);
+	var app = angular.module('myQuiz',['smoothScroll']);
 
   app.filter('html', ['$sce', function ($sce) { 
     return function (text) {

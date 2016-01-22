@@ -34,7 +34,7 @@
 		"correct"  : 0,
 		"button" : "如何延长免息期?",
 		"feedback" : "在账单日当天的消费一般计入下一个账单周期。不难理解，在每个账单周期的头一天消费可以享受最久的免息期。",
-	    "info" : "<br><div class=\"infodiv\"><p>我国各大银行的免息期一般为48天~56天,大部分银行允许有限制地修改账单日。</p></div>"
+	    "info" : "<br><div class=\"infodiv\"><p>我国各大银行的免息期一般为48天~56天，大部分银行允许有限制地修改账单日。</p></div>"
 	},
     {
 		"question" : "Which image shows a close-up of Saturn?",

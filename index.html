@@ -44,9 +44,9 @@
     			<p ng-show="myQuestion.correctness === 'correct'">回答<strong>正确</strong>.</p>
     			<p ng-show="myQuestion.correctness === 'incorrect'"><strong>哎呦错啦！</strong></p>
     		    <div ng-bind-html="myQuestion.feedback | html"></div>
-                <div class="btn" ng-click="selectContinue()">下一题</div>
-                <div class="btn why" ng-click="showInfo = !showInfo" ng-hide="myQuestion.info === undefined">{{myQuestion.button}}</div>
-                <div ng-bind-html="myQuestion.info | html" ng-show="showInfo"></div>
+                <a href="#" scroll-to="myQuiz" class="btn" ng-click="selectContinue()">下一题</a>
+                <a href="#" scroll-to="info" duration="1250" easing="easeOutCubic" class="btn why" ng-click="showInfo = !showInfo" ng-hide="myQuestion.info === undefined">{{myQuestion.button}}</a>
+                <div smooth-scroll id="info" ng-bind-html="myQuestion.info | html" ng-show="showInfo"></div>
     		</div>
     	</div>
     	<div class="results {{totalQuestions === activeQuestion?'active':inactive}}">
@@ -57,6 +57,7 @@
     	</div>
     </div>
 <script type="text/javascript" src="js/angular.min.js"></script>
-<script type="text/javascript" src="js/quiz.js"></script>
+<script type="text/javascript" src="js/angular-smooth-scroll.js"></script>
+<script type="text/javascript" src="js/quiz.js"></script> 
 </body>
 </html>
