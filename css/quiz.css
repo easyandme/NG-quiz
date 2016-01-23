@@ -297,7 +297,7 @@ th {
     #myQuiz .question .txt {
     	font-size: 1.25em;
 	    margin-bottom: 15px;
-	    width: 90%;
+	    width: 92%;
 	    min-width: 250px;
     }
     #myQuiz .question .ans {
@@ -329,4 +329,16 @@ th {
 
     #myQuiz .active { left: 18px; }
     #myQuiz .intro.inactive, #myQuiz .answered.inactive { left: -650px; }
+}
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+	#myQuiz p { 
+    line-height: 2em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+	#myQuiz p { 
+    line-height: 1.5em;
+    }
 }
