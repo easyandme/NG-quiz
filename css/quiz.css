@@ -1,14 +1,20 @@
 
-body { background-color: #FDF2F2; padding: 20px; }
+body { 
+	background-color: #FDF2F2; 
+	padding: 20px; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	-webkit-touch-callout: none;    
+}
 
 #myQuiz {
-   font-family: Segoe UI, Microsoft Yahei, Helvetia Neue, Helvetica, sans-serif; font-size: 16px; font-weight: 400;
-   width: 650px; height: 650px;
-   position: relative;
-   overflow: hidden;
-   color: #000;
-   background: #fff url(../images/background.jpg) no-repeat 0px 0px;
-   border-left: 2px solid #CAC5C5;
+    font-family: Segoe UI, Microsoft Yahei, Helvetia Neue, Helvetica, sans-serif; font-size: 16px; font-weight: 400;
+    width: 650px; height: 650px;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    background-color: #fff;
+    border-left: 2px solid #CAC5C5;
 	border-right: 2px solid #CAC5C5;
 	border-bottom: 2px solid #CACACA;
 	border-radius: 10px; 
@@ -90,12 +96,17 @@ body { background-color: #FDF2F2; padding: 20px; }
 /* Intro */
 #myQuiz .intro {
 	position: absolute;
-	top: 225px;
+	top: 125px;
     left: 650px;
     width: 550px; 
 }
+#myQuiz .intro_image {
+	width: 315px;
+    height: 200px; 
+    margin-left: -5px;
+}
 #myQuiz .intro p.introtext {
-	margin: 0px 0px 40px 0px;
+	margin: 15px 0px 40px 0px;
 	width: 260px;
 }
 
@@ -335,10 +346,18 @@ th {
 	#myQuiz p { 
     line-height: 2em;
     }
+	#myQuiz .intro_image {
+	width: 288px;
+	height: 183px;
+	}
 }
 
 @media only screen and (max-width: 360px) {
 	#myQuiz p { 
     line-height: 1.5em;
     }
+	#myQuiz .intro_image {
+	width: 245px;
+	height: 156px;
+	}
 }
