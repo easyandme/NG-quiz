@@ -223,7 +223,7 @@ body {
 	background-image: url(../images/icon_twitter.svg);
 }
 
-#myQuiz .active, #myQuiz .inactive {
+#myQuiz .active:not(.intro), #myQuiz .inactive:not(.intro) {
 	transition: left 1.5s cubic-bezier(.16,.7,.42,.96);
 }
 #myQuiz .active {
