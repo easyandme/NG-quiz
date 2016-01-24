@@ -295,6 +295,7 @@ th {
     	width: 49px;
     	height: 33px;
     	top: -30px;
+	    background-size: 16px;
     }
     #myQuiz .intro {
     	width: 330px;
