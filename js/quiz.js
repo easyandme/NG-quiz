@@ -50,7 +50,7 @@
           return $scope.myQuestions[qIndex].correctAnswer === aIndex;
        }
 
-       $scope.selectContinue = function(){
+       $scope.selectContinue = function(){ 
           return $scope.activeQuestion += 1;
        }
 
@@ -65,6 +65,10 @@
           var newMarkup = emailLink + wechatLink;
 
           return $sce.trustAsHtml(newMarkup); 
+       }
+
+       $scope.resizeHeight = function(){
+          document.getElementById('myQuiz').style.height = 1000 + 'px'; 
        }
        
        $scope.addOverlay = function(){  

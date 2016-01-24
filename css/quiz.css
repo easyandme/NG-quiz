@@ -237,7 +237,8 @@ body {
 
 /* Test */
 #myQuiz {
-	height: 1000px;
+	height: 480px;
+    height: 100vh; 
 }
 #myQuiz .results {
 	top: 650px !important;
