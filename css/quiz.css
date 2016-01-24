@@ -75,13 +75,15 @@ body {
 	content: '';
 	display: block;
 	position: absolute;
-	top: -60px;
-	left: -15px;
-	width: 65px;
-	height: 40px;
-	opacity: 0;
-	background: url(../images/ring.svg) no-repeat 0px 0px;
+    top: -60px;
+    left: -5px;
+    width: 65px;
+    height: 40px;
+    opacity: 0;
+    background: url(../images/dollar.svg) no-repeat 7px 7px;
     transition: opacity 1s, top 1s;
+    -webkit-transition: opacity 1s, top 1s;
+    background-size: 26px;
 }
 
 #myQuiz .progress div.on,
