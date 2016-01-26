@@ -170,10 +170,12 @@ body {
 }
 
 #myQuiz .question .ans.image {
-/*	min-height: 60px;
-	padding: 0px;  */
+/*	min-height: 60px; */
+	padding: 0px;  
 	background-repeat: no-repeat;
-	background-position: 0px 0px;
+	background-position: 0px -5px;
+    min-height: 58px;
+    border: 2px solid #B5B2AA;
 }
 
 /* Feedback */
@@ -324,8 +326,10 @@ th {
 	    min-width: 240px;
     }
     #myQuiz .question .ans.image {
-    /*	min-height: 45px;
-    	background-size: auto 45px; */
+        min-height: 48px;
+	    background-size: auto 55px;
+	    width: 200px;
+	    min-width: 210px;
     }
     #myQuiz .question .ans.image:hover {
 		background-color: rgba(238,198,102,.2);
