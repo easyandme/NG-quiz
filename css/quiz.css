@@ -199,11 +199,24 @@ body {
 }
 
 /* Results */
+#developer {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -160px;
+    visibility: hidden;
+}
 #myQuiz .results {
 	position: absolute;
 	top: 225px;
 	left: 660px;
 	width: 550px;
+}
+#myQuiz .results.active {
+	visibility: visible;
 }
 #myQuiz .results .share {
 	margin-top: 40px;
@@ -241,8 +254,7 @@ body {
     min-height: 100vh; 
 }
 #myQuiz .results {
-	top: 650px !important;
-	left: 40px !important;
+	top: 80px !important;
 	visibility: hidden;
 }
 
