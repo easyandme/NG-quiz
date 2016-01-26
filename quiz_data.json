@@ -53,10 +53,9 @@
     {
 		"question" : "下面哪种信用卡安全性最高?",
 		"answers"  : [
-			{"id"  : 0, "image" : "images/close_up_01.jpg" },
-			{"id"  : 1, "image" : "images/close_up_02.jpg" },
-			{"id"  : 2, "image" : "images/close_up_03.jpg" },
-			{"id"  : 3, "image" : "images/close_up_04.jpg" }
+			{"id"  : 0, "text" : "磁条卡" },
+			{"id"  : 1, "text" : "芯片卡"},
+			{"id"  : 1, "text" : "磁条芯片复合卡"}
 		],
 		"correct"  : 3
 	} 
