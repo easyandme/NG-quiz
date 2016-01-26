@@ -79,7 +79,7 @@
         myOverlay.style.top = 0;  
         myOverlay.style.opacity = 0.8;  
         myOverlay.style.width = window.innerWidth + 'px';
-        myOverlay.style.height = window.innerHeight + 'px';
+        myOverlay.style.height = document.body.clientHeight + 'px';
         myOverlay.style.top = window.pageYOffset + 'px';
         myOverlay.style.left = window.pageXOffset + 'px';
         myOverlay.style.zIndex = 999;
