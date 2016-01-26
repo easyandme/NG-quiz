@@ -202,7 +202,7 @@ body {
 #developer {
     position: absolute;
     z-index: 1000;
-    top: 50%;
+    top: 150px;
     left: 50%;
     width: 200px;
     margin-left: -100px;
