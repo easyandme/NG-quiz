@@ -212,7 +212,8 @@ transition: background-color 1s; }
 }
 
 #myQuiz .active:not(.intro), #myQuiz .inactive:not(.intro) {
-	transition: left 1.5s cubic-bezier(.16,.7,.42,.96);
+	transition: left 1.5s ease-in-out;
+	-webkit-transition: left 1.5s ease-in-out;
 }
 #myQuiz .active {
 	left: 40px;

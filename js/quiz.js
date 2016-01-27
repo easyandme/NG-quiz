@@ -68,7 +68,7 @@
        }
 
        $scope.resizeHeight = function(){
-          document.getElementById('myQuiz').style.height = 1000 + 'px'; 
+          document.getElementById('myQuiz').style.height = 1150 + 'px'; 
        }
        
        $scope.addOverlay = function(){  
