@@ -226,19 +226,17 @@ transition: background-color 1s;
 }
 
 #myQuiz .active:not(.intro), #myQuiz .inactive:not(.intro) {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-	-o-transform: translate3d(0,0,0);
-	transition: left 1.5s cubic-bezier(.16,.7,.42,.96);
-	-webkit-transition: left 1.5s cubic-bezier(.16,.7,.42,.96);
+	transition: transform 1.5s cubic-bezier(.16,.7,.42,.96);
+	-webkit-transition: transform 1.5s cubic-bezier(.16,.7,.42,.96);
 }
-#myQuiz .active {
-	left: 40px;
+#myQuiz .active { 
+	transform: translate3d(-620px,0, 0); 
+    -webkit-transform: translate3d(-620px,0, 0); 
 }
-#myQuiz .intro.inactive, #myQuiz .answered.inactive {
-	left: -1350px;
+#myQuiz .intro.inactive, #myQuiz .answered.inactive { 
+	transform: translate3d(-1368px,0, 0); 
+    -webkit-transform: translate3d(-1368px,0, 0); 
 }
-
 /* Test */
 #myQuiz {
 	height: 550px;
@@ -311,7 +309,7 @@ th {
     #myQuiz .question {
     	width: 90%;
     	top: 55px;
-    	left: 100%;
+    	left: 660px;
     }
     #myQuiz .question .txt {
     	font-size: 1.25em;
@@ -370,63 +368,4 @@ th {
 	}
 }
 
-
-@-webkit-keyframes fadeOutLeft {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes fadeOutLeft {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-.fadeOutLeft {
-  -webkit-animation-name: fadeOutLeft;
-  animation-name: fadeOutLeft;
-}
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-} 
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
+ 
