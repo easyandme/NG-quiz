@@ -47,7 +47,7 @@
     			<p ng-show="myQuestion.correctness === 'correct'">回答<strong>正确</strong>.</p>
     			<p ng-show="myQuestion.correctness === 'incorrect'"><strong>哎呦错啦！</strong></p>
     		    <div ng-bind-html="myQuestion.feedback | html"></div>
-                <a href="#" scroll-to="myQuiz" class="btn" ng-click="selectContinue()">下一题</a>
+                <a href="#" scroll-to="myQuiz" easing="easeOutCubic" class="btn" ng-click="selectContinue()">下一题</a>
                 <a href="#" scroll-to="info" duration="1250" easing="easeOutCubic" class="btn why" ng-click="showInfo = !showInfo;resizeHeight()" ng-hide="myQuestion.info === undefined">{{myQuestion.button}}</a>
                 <div ng-bind-html="myQuestion.info | html" ng-show="showInfo"></div>
     		</div>
