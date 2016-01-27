@@ -34,12 +34,21 @@ text-decoration: none;     padding: 5px 15px;     border-radius: 6px; }
 #myQuiz .btn.email {     
 	background: #c04b01 url(../images/headphones.png) no-repeat left;
 	border: 0;     background-size: 28px;     background-
-position: 6px; } /* Progress Bar */ #myQuiz .progress {     width: 550px;
-position: absolute;     top: 60px;     left: 40px; } #myQuiz .progress div {
+position: 6px; } 
+/* Progress Bar */ 
+#myQuiz .progress {     
+	width: 550px;
+    position: absolute;     
+    top: 60px;     
+    left: 40px; 
+} 
+#myQuiz .progress div {
 position: relative;     display: inline-block;     width: 30px;     height:
 30px;     margin-right: 30px;     border-radius: 50%;     background-color:
-rgba(255,255,255,.2);     transition: background-color 1s;     -webkit-
-transition: background-color 1s; }
+rgba(255,255,255,.2);     
+transition: background-color 1s;     
+-webkit-transition: background-color 1s; 
+}
 
 #myQuiz .progress div::after {
 	content: '';
@@ -50,7 +59,9 @@ transition: background-color 1s; }
     width: 65px;
     height: 40px;
     opacity: 0;
-    background: url(../images/dollar.svg) no-repeat 7px 7px;
+    background: url(../images/dollar.svg) no-repeat 7px 7px; 
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     transition: opacity 1s, top 1s;
     -webkit-transition: opacity 1s, top 1s;
     background-size: 26px;
@@ -156,6 +167,8 @@ transition: background-color 1s; }
 	margin-top: 50px;
 	transition: opacity 1.5s, margin-top 1.5s;
 	-webkit-transition: opacity 1.5s, margin-top 1.5s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 #myQuiz .feedback .btn {
 	margin-top: 5px;
@@ -212,6 +225,8 @@ transition: background-color 1s; }
 }
 
 #myQuiz .active:not(.intro), #myQuiz .inactive:not(.intro) {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 	transition: left 1.5s ease-in-out;
 	-webkit-transition: left 1.5s ease-in-out;
 }
@@ -228,7 +243,7 @@ transition: background-color 1s; }
     min-height: 100vh; 
 }
 #myQuiz .results {
-	top: 80px !important;
+	top: 100px !important;
 	visibility: hidden;
 }
 
@@ -352,3 +367,4 @@ th {
 	height: 156px;
 	}
 }
+ 
