@@ -60,8 +60,9 @@ transition: background-color 1s;
     height: 40px;
     opacity: 0;
     background: url(../images/dollar.svg) no-repeat 7px 7px; 
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+	-o-transform: translate3d(0,0,0);
+    transform: translateZ(0);
     transition: opacity 1s, top 1s;
     -webkit-transition: opacity 1s, top 1s;
     background-size: 26px;
@@ -167,8 +168,8 @@ transition: background-color 1s;
 	margin-top: 50px;
 	transition: opacity 1.5s, margin-top 1.5s;
 	-webkit-transition: opacity 1.5s, margin-top 1.5s;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 #myQuiz .feedback .btn {
 	margin-top: 5px;
@@ -225,8 +226,9 @@ transition: background-color 1s;
 }
 
 #myQuiz .active:not(.intro), #myQuiz .inactive:not(.intro) {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+	-o-transform: translate3d(0,0,0);
 	transition: left 1.5s ease-in-out;
 	-webkit-transition: left 1.5s ease-in-out;
 }
@@ -246,7 +248,7 @@ transition: background-color 1s;
 	top: 100px !important;
 	visibility: hidden;
 }
-
+.animatedFast{-webkit-animation-duration:.35s;animation-duration:.35s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 /* Table */
 table {
 	width: 100%;
@@ -367,4 +369,64 @@ th {
 	height: 156px;
 	}
 }
- 
+
+
+@-webkit-keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+} 
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
