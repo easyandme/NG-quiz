@@ -167,9 +167,7 @@ transition: background-color 1s;
 	color: #75391C;
 	margin-top: 50px;
 	transition: opacity 1.5s, margin-top 1.5s;
-	-webkit-transition: opacity 1.5s, margin-top 1.5s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+	-webkit-transition: opacity 1.5s, margin-top 1.5s; 
 }
 #myQuiz .feedback .btn {
 	margin-top: 5px;
@@ -230,8 +228,8 @@ transition: background-color 1s;
 	-webkit-transition: transform 1.5s cubic-bezier(.16,.7,.42,.96);
 }
 #myQuiz .active { 
-	transform: translate3d(-620px,0, 0); 
-    -webkit-transform: translate3d(-620px,0, 0); 
+	transform: translate3d(-642px,0, 0); 
+    -webkit-transform: translate3d(-642px,0, 0); 
 }
 #myQuiz .intro.active { 
 	transform: translate3d(0,0, 0); 
@@ -339,7 +337,7 @@ th {
     #myQuiz .results {
     	width: 260px;
     	top: 150px;
-    	left: 330px;
+    	left: 660px;
     }
     #myQuiz .results .share {
     	margin-top: 20px;
