@@ -233,6 +233,10 @@ transition: background-color 1s;
 	transform: translate3d(-620px,0, 0); 
     -webkit-transform: translate3d(-620px,0, 0); 
 }
+#myQuiz .intro.active { 
+	transform: translate3d(0,0, 0); 
+    -webkit-transform: translate3d(0,0, 0); 
+}
 #myQuiz .intro.inactive, #myQuiz .answered.inactive { 
 	transform: translate3d(-1368px,0, 0); 
     -webkit-transform: translate3d(-1368px,0, 0); 
@@ -344,8 +348,11 @@ th {
     	margin-bottom: 20px;
     }
 
-    #myQuiz .active { left: 18px; }
-    #myQuiz .intro.inactive, #myQuiz .answered.inactive { left: -650px; }
+    #myQuiz .intro.active { left: 18px; }
+    #myQuiz .intro.inactive, #myQuiz .answered.inactive { 
+	transform: translate3d(-1368px,0, 0); 
+    -webkit-transform: translate3d(-1368px,0, 0); 
+    }
 }
 
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
