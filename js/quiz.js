@@ -58,11 +58,11 @@
           
           var url = 'http://aquiz.cn/quiz2'
 
-         // var emailLink = '<a class="btn email">联系开发者</a>'
+          var mqLink = ''
 
-          var wechatLink = '<a class="btn wechat" id="wechat">联系开发者</a>';    
+          var wechatLink = '';    
            
-          var newMarkup = wechatLink;
+          var newMarkup = wechatLink + mqLink;
 
           return $sce.trustAsHtml(newMarkup); 
        }
@@ -85,9 +85,13 @@
         myOverlay.style.zIndex = 999;
         myOverlay.style.backgroundColor = '#000';  
         document.getElementById('developer').style.visibility = 'visible';
+        myOverlay.addEventListener('click', removeSelf, false);
        }
        
-          
+       function removeSelf() {
+           document.getElementById('overlay').remove();
+           document.getElementById('developer').style.visibility = 'hidden';
+       }
 
 	}]);
 

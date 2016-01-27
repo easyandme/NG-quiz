@@ -56,7 +56,9 @@
     	<div class="results {{totalQuestions === activeQuestion?'active':inactive}}">
     		<h3>测试结果</h3>
     		<p>{{totalQuestions}}中回答正确{{score}}题，正确率达到{{percentage}}%！</p>
-    		<div class="share" ng-click="addOverlay()" ng-bind-html="createShareLinks(percentage)"> 
+    		<div class="share"> 
+            <a class="btn wechat" ng-click="addOverlay()" id="wechat">联系开发者</a>
+            <a class="btn email" href="http://aquiz.cn/quiz2">音乐商数测试</a>
     		</div>
     	</div>
     </div>
