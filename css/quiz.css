@@ -229,8 +229,8 @@ transition: background-color 1s;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 	-o-transform: translate3d(0,0,0);
-	transition: left 1.5s ease-in-out;
-	-webkit-transition: left 1.5s ease-in-out;
+	transition: left 1.5s cubic-bezier(.16,.7,.42,.96);
+	-webkit-transition: left 1.5s cubic-bezier(.16,.7,.42,.96);
 }
 #myQuiz .active {
 	left: 40px;
