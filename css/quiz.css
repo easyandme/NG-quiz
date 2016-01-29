@@ -70,7 +70,7 @@ transition: background-color 1s;
 
 #myQuiz .progress div.on,
 #myQuiz .progress div.answered {
-	background-color: #efbe5e;
+	background-color: #F8E5C2;
 }
 #myQuiz .progress div.correct::after {
     top: -5px;
@@ -81,7 +81,7 @@ transition: background-color 1s;
 #myQuiz .intro {
 	position: absolute;
 	top: 125px;
-    left: 650px;
+    left: 40px;
     width: 550px; 
 }
 #myQuiz .intro_image {
@@ -166,8 +166,8 @@ transition: background-color 1s;
 	opacity: 0;
 	color: #75391C;
 	margin-top: 50px;
-	transition: opacity 1.5s, margin-top 1.5s;
-	-webkit-transition: opacity 1.5s, margin-top 1.5s; 
+	transition: opacity 1s, margin-top 1s;
+	-webkit-transition: opacity 1s, margin-top 1s; 
 }
 #myQuiz .feedback .btn {
 	margin-top: 5px;
