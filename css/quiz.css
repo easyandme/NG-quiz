@@ -223,7 +223,7 @@ transition: background-color 1s;
 	background-image: url(../images/icon_wechat.png);
 }
 
-#myQuiz .active:not(.intro), #myQuiz .inactive:not(.intro) {
+#myQuiz .active:not(.intro), #myQuiz .inactive {
 	transition: transform 1.5s cubic-bezier(.16,.7,.42,.96);
 	-webkit-transition: transform 1.5s cubic-bezier(.16,.7,.42,.96);
 }
