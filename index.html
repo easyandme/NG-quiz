@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="myQuiz" ng-controller="QuizController">
-    	<h1 ng-show="activeQuestion === -1">关于<span>信用卡</span><br>你应该知道的事</h1>
+    	<h1 ng-show="activeQuestion === -1">信用卡八问</h1>
     	<div class="progress">
     	    <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}
             {{myQuestion.questionState === 'answered'?'answered':'unanswered'}}
@@ -58,7 +58,7 @@
     		<p>{{totalQuestions}}中回答正确{{score}}题，正确率达到{{percentage}}%！</p>
     		<div class="share"> 
             <a class="btn wechat" ng-click="addOverlay()" id="wechat">联系开发者</a>
-            <a class="btn email" href="http://aquiz.cn/quiz2">好玩！音乐商数测试</a>
+            <a class="btn email" href="http://aquiz.cn/quiz2">音乐商数测试</a>
     		</div>
     	</div>
     </div>

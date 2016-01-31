@@ -276,9 +276,9 @@ th {
 	}
 	#myQuiz h1 {
 		width: 300px;
-		font-size: 1.3em;
-		top: 0px;
-	    left: 25px;
+		font-size: 2em;
+		top: 16px;
+	    left: 18px;
 	    position: absolute;
 	}
 	#myQuiz h1 span {line-height: 43px;}
