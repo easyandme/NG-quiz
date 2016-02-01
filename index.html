@@ -26,7 +26,7 @@
             <img class="intro_image" src="images/intro.jpg" />
             </div>
     		<p class="introtext">手头的信用卡，你真的足够了解它吗？</p>
-    	    <p class="btn" ng-click="activeQuestion = 0">开始</p>
+    	    <p class="btn start" ng-click="activeQuestion = 0">开始</p>
     	</div>
     	<div class="question
            {{$index === activeQuestion ? 'active' : 'inactive'}}
@@ -54,12 +54,12 @@
     	</div>
         <img id="developer" alt="developer" width="80" src="images/me.jpg" style="display: inline;">
     	<div class="results {{totalQuestions === activeQuestion?'active':inactive}}">
-            <h5>我的信用卡知识水平已达到:</h5>
+            <h5>我的知识水平已达到:</h5>
     		<h3>{{result}}</h3>
     		<p>{{totalQuestions}}题中回答正确{{score}}题，正确率达到{{percentage}}%！</p>
     		<div class="share"> 
-            <a class="btn wechat" ng-click="addOverlay()" id="wechat">联系开发者</a>
             <a class="btn email" href="http://aquiz.cn/quiz2">音乐商数测试</a>
+            <a class="btn wechat" ng-click="addOverlay()" id="wechat">联系开发者</a>
     		</div>
     	</div>
     </div>

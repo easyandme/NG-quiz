@@ -53,7 +53,7 @@
           } else if($scope.score <= 4 && $scope.score > 2) { 
             $scope.result = '信用卡小白';
           }
-          document.title = '我对信用卡的了解程度有' + $scope.percentage + '，达到' + $scope.result + '水平';
+          document.title = '我对信用卡的了解程度有' + $scope.percentage + '%，达到' + $scope.result + '水平';
         }
 
        $scope.isSelected = function(qIndex,aIndex){

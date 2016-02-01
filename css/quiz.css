@@ -35,6 +35,10 @@ text-decoration: none;     padding: 5px 15px;     border-radius: 6px; }
 	background: #c04b01 url(../images/headphones.png) no-repeat left;
 	border: 0;     background-size: 28px;     background-
 position: 6px; } 
+#myQuiz .btn.start {
+    padding: 3px 30px;
+    font-size: 20px;
+}
 /* Progress Bar */ 
 #myQuiz .progress {     
 	width: 550px;
@@ -93,6 +97,7 @@ transition: background-color 1s;
 	margin: 15px 0px 40px 0px;
 	width: 260px;
     font-size: 20px;
+    padding-right: 10px;
 }
 
 /* Questions */
