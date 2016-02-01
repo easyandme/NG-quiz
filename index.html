@@ -54,7 +54,8 @@
     	</div>
         <img id="developer" alt="developer" width="80" src="images/me.jpg" style="display: inline;">
     	<div class="results {{totalQuestions === activeQuestion?'active':inactive}}">
-    		<h3>测试结果</h3>
+            <h5>我的信用卡知识水平已达到:</h5>
+    		<h3>{{result}}</h3>
     		<p>{{totalQuestions}}题中回答正确{{score}}题，正确率达到{{percentage}}%！</p>
     		<div class="share"> 
             <a class="btn wechat" ng-click="addOverlay()" id="wechat">联系开发者</a>

@@ -92,6 +92,7 @@ transition: background-color 1s;
 #myQuiz .intro p.introtext {
 	margin: 15px 0px 40px 0px;
 	width: 260px;
+    font-size: 20px;
 }
 
 /* Questions */
@@ -245,7 +246,7 @@ transition: background-color 1s;
     min-height: 100vh; 
 }
 #myQuiz .results {
-	top: 100px !important;
+	top: 150px;
 	visibility: hidden;
 }
 .animatedFast{-webkit-animation-duration:.35s;animation-duration:.35s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
@@ -336,7 +337,7 @@ th {
 
     #myQuiz .results {
     	width: 260px;
-    	top: 150px;
+    	top: 60px !important;
     	left: 660px;
     }
     #myQuiz .results .share {

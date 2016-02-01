@@ -18,6 +18,7 @@
         $scope.activeQuestion = -1;
         $scope.activeQuestionAnswered = 0;
         $scope.percentage = 0;
+        $scope.result = '测试结果';
 
         $http.get('quiz_data.json').then(function(quizData){
           $scope.myQuestions = quizData.data;
@@ -41,6 +42,18 @@
               $scope.myQuestions[qIndex].questionState = 'answered'
           } 
           $scope.percentage = (($scope.score / $scope.totalQuestions)*100).toFixed(1);
+          if($scope.score > 6) {
+            $scope.result = '信用卡经理人';
+          } else if($scope.score <= 6 && $scope.score > 4) { 
+            $scope.result = '信用卡高级玩家';
+          } else if($scope.score <= 4 && $scope.score > 2) { 
+            $scope.result = '信用卡普通玩家';
+          } else if($scope.score <= 4 && $scope.score > 2) { 
+            $scope.result = '信用卡低端玩家';
+          } else if($scope.score <= 4 && $scope.score > 2) { 
+            $scope.result = '信用卡小白';
+          }
+          document.title = '我对信用卡的了解程度有' + $scope.percentage + '，达到' + $scope.result + '水平';
         }
 
        $scope.isSelected = function(qIndex,aIndex){
