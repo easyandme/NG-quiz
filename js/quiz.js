@@ -41,7 +41,7 @@
               }        
               $scope.myQuestions[qIndex].questionState = 'answered'
           } 
-          $scope.percentage = (($scope.score / $scope.totalQuestions)*100).toFixed(1);
+          $scope.percentage = (($scope.score / $scope.totalQuestions)*100).toFixed(0);
           if($scope.score > 6) {
             $scope.result = '信用卡经理人';
           } else if($scope.score <= 6 && $scope.score > 4) { 
