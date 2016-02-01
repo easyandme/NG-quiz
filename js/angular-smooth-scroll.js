@@ -138,7 +138,7 @@
 			 * Scroll the page by an increment, and check if it's time to stop
 			 */
 			var animateScroll = function () {
-				timeLapsed += 16;
+				timeLapsed += 24;
 				percentage = ( timeLapsed / duration );
 				percentage = ( percentage > 1 ) ? 1 : percentage;
 				position = startLocation + ( distance * getEasingPattern(easing, percentage) );
