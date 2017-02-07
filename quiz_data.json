@@ -1,53 +1,99 @@
 [
-  {
-	  	"question" : "Saturn is the _____ planet from the Sun.",
-	  	"answers"   : [
-	        {"id": 0, "text" : "Fourth"},
-	        {"id": 1, "text" : "Fifth"},
-	        {"id": 2, "text" : "Seventh"},
-	        {"id": 3, "text" : "Eighth"}    
-	  	],
-	  	"correct"  : 1
-  },
-  {
-		"question" : "Which image shows a close-up of Saturn?",
+    {
+		"question" : "小明的信用卡上刻着\"VALID THRU 02/16\"，这张卡的有效期截止到哪一天?",
 		"answers"  : [
-			{"id"  : 0, "image" : "images/close_up_01.jpg" },
-			{"id"  : 1, "image" : "images/close_up_02.jpg" },
-			{"id"  : 2, "image" : "images/close_up_03.jpg" },
-			{"id"  : 3, "image" : "images/close_up_04.jpg" }
+			{"id"  : 0, "text" : "2016年2月1日"},
+			{"id"  : 1, "text" : "2016年2月28日"},
+			{"id"  : 2, "text" : "2016年2月29日"},
+			{"id"  : 3, "text" : "2016年2月的某一天"}
 		],
-		"correct"  : 3
+		"correct"  : 2,
+		"button" : "偷偷告诉你",
+		"feedback" : "<p>信用卡有效期一般截止在卡上显示月份的最后一天（24时）。</p>",
+		"info" : "<br><div class=\"infodiv\"><p>实际上，信用卡并没有所谓的截止日期。如果你曾续办过信用卡，就会发现其实新卡的卡号并没有变，有变化的只是卡上的“截止日期”。</p><p>那为什么银行要在卡上刻这个日期呢？主要有以下两个作用。</p><ol><li>为了给卡设定一个生命周期，可以定期替换掉长年累月磨损的旧卡。</li><li>当客户进行网购、电话购物时，商家无法看到信用卡的信息，失效日期可以帮助商家核实确认该客户是信用卡持有人。</li></ol><div>"
 	},
-	{
-		"question" : "One year on Saturn is equivalent to how many years on Earth?",
+    {
+		"question" : "以下哪种情况可能会降低信用卡额度?",
 		"answers"  : [
-			{"id"  : 0, "text" : "12"},
-			{"id"  : 1, "text" : "6"},
-			{"id"  : 2, "text" : "29"},
-			{"id"  : 3, "text" : "2"}
-		],
-		"correct"  : 2
-	},
-	{
-		"question" : "What is the name of Saturn's largest moon?",
-		"answers"  : [
-			{"id"  : 0, "text" : "Hercules"},
-			{"id"  : 1, "text" : "Europa"},
-			{"id"  : 2, "text" : "Goliath"},
-			{"id"  : 3, "text" : "Zeus"},
-			{"id"  : 4, "text" : "Titan"},
-			{"id"  : 5, "text" : "Triton"}
+			{"id"  : 0, "text" : "被银行认为有套现嫌疑" },
+			{"id"  : 1, "text" : "欠款逾期不还或逾期金额较大"},
+			{"id"  : 2, "text" : "信用卡激活后长期不使用"},
+			{"id"  : 3, "text" : "信用卡账户异常"},
+			{"id"  : 4, "text" : "以上均有可能"}
 		],
 		"correct"  : 4,
-		"feedback" : "Though the names seem similar, Triton orbits the planet Neptune."
+		"feedback" : "如果客户被银行\"误伤\"，可以及时联系银行，银行核实后会将额度恢复。"
 	},
 	{
-		"question" : "Saturn is visible from Earth without a telescope",
+	  	"question" : "卡号为5569 7209 5847 4442是以下哪种信用卡?",
+	  	"answers"   : [
+	        {"id": 0, "text" : "Visa", "image" : "images/visa_icon.png", "pos" : "2.85em 50%", "size" : "30px"},
+	        {"id": 1, "text" : "MasterCard", "image" : "images/mc_icon.png", "pos" : "6.35em 50%", "size" : "30px"},
+	        {"id": 2, "text" : "JCB", "image" : "images/jcb_icon.gif", "pos" : "2.75em 50%", "size" : "30px"},
+	        {"id": 3, "text" : "American Express", "image" : "images/ae_icon.png", "pos" : "9em 50%", "size" : "30px"}    
+	  	],
+	  	"correct"  : 1,
+		"button" : "为什么?",
+		"feedback" : "<p>MasterCard万事达卡卡号的首位数是5.</p><p>Visa卡卡号的首位数为4.</p>",
+		"info" : "<br><div class=\"infodiv\"><p>银行卡卡号第一位数字是<strong>主要产业标识符(MII)</strong>，如下表所示：</p><table class=\"table-bordered table-striped\"><tbody><tr><th>1、2</th><th>航空</th></tr><tr><th>3</th><th>运输、娱乐和金融财务</th></tr><tr><th>4、5</th><th>金融服务</th></tr><tr><th>6</th><th>商业和金融财务</th></tr><tr><th>7</th><th>石油和其他未来行业使用</th></tr><tr><th>8</th><th>医疗、电信和其他未来行业使用</th></tr><tr><th>9</th><th>由本国标准机构分配</th></tr></tbody></table><p>不同卡号对应不同的发行机构。</p><p>例如中国银联发行的卡一定是62开头，而Visa信用卡的卡开头是4，万事达Matercard的卡号一般以51、52、53、54、55开始。美国运通（American Express）的信用卡则以3打头。</p><div>"
+    },
+	{
+		"question" : "以下哪种信用卡消费情况可以享受最长的免息期?",
 		"answers"  : [
-			{"id"  : 0, "text" : "True"},
-			{"id"  : 1, "text" : "False"}
+			{"id"  : 0, "text" : "账单日出帐后消费"},
+			{"id"  : 1, "text" : "还款日还款后消费"},
+			{"id"  : 2, "text" : "当月账单日和当月还款日之间消费"},
+			{"id"  : 3, "text" : "当月还款日和下月账单日之间消费"}
 		],
-		"correct"  : 0
-	}
+		"correct"  : 0,
+		"button" : "如何延长免息期?",
+		"feedback" : "账单日出账后当天的消费一般计入下一个账单周期，在每个账单周期的头一天消费即可享受最久的免息期。",
+	    "info" : "<br><div class=\"infodiv\"><p>我国各大银行的免息期一般为48天~56天，大部分银行允许通过网上自助或者电话服务修改账单日，从而延长免息期。</p><p>例如，某信用卡每月6日出账单，24日还款。如果在5日那一天将账单日修改为每月4日，那么出账日就会推迟到下月的4日，也就是说免息期至少延长了28天。</p><p>不过值得一提的是，大部分银行都对信用卡账单日的修改次数有限制，所以此招最好只在救急时用。</p></div>"
+	},
+    {
+		"question" : "下面哪种信用卡安全性最高?",
+		"answers"  : [
+			{"id"  : 0, "text" : "磁条卡" },
+			{"id"  : 1, "text" : "芯片卡"},
+			{"id"  : 1, "text" : "磁条芯片复合卡"}
+		],
+		"correct"  : 1,
+		"feedback" : "磁条中含有信用卡的卡号等信息且很容易被人读取进行卡片复制，而芯片卡则几乎无此风险。"
+   	},
+	{
+		"question" : "小明在某高档餐厅用餐结束刷信用卡结账，后来却发现账单上的商户名称变成了某大型超市，最有可能是什么情况？",
+		"answers"  : [
+			{"id"  : 0, "text" : "银行系统数据库混淆"},
+			{"id"  : 1, "text" : "遭遇信用卡盗刷"}, 
+			{"id"  : 2, "text" : "遭遇POS机套码"}
+		],
+		"correct"  : 2,
+		"button" : "套码的汉子你跑不了",
+		"feedback" : "套码是指商户或第三方支付机构套用商户类别代码享受低手续费率的违法行为。",
+	    "info" : "<br><div class=\"infodiv\"><h4>为什么会出现“套码”?</h4><p>商户中有餐娱、一般、民生等三大类，不同类别编码不同，手续费率分别为1.25%、0.78%、0.38%。商户或第三方支付公司为了节省刷卡手续费获利，将原本应是高手续费率的POS机套用低费率的商户识别码。</p><h4>套码对顾客有什么危害？怎么办？</h4><p>不同商户类别对应的消费积分很可能不同，用户甚至有可能被银行系统认定有非法套现嫌疑。在POS机刷卡后请注意小票编号的后四位，餐饮类的编码是5812，容易被套成5814（快餐类）或5411（超市类），发现后凭票据和账单可以和向银联电话举报。</p></div>"
+	},
+	{
+		"question" : "下面哪种行为可以减少信用卡被盗刷的风险?",
+		"answers"  : [
+			{"id"  : 0, "text" : "设置支付密码" },
+			{"id"  : 1, "text" : "在卡背面签名"},
+			{"id"  : 2, "text" : "关闭境外无卡支付（外币卡）"},
+			{"id"  : 3, "text" : "以上均可"}
+		],
+		"correct"  : 3,
+		"feedback" : "和支付密码一样，信用卡背面的签名可以一定程度上帮助核实持卡人的身份。此外，若卡被ATM吞掉还可以凭签名取回。"
+	},
+    {
+		"question" : "下面哪种情况不会影响持卡人信誉?",
+		"answers"  : [
+			{"id"  : 0, "text" : "信用卡透支取现" },
+			{"id"  : 1, "text" : "信用卡不按时还款"},
+			{"id"  : 2, "text" : "信用卡套现"},
+			{"id"  : 3, "text" : "以上均会影响"}
+		],
+		"correct"  : 0,
+		"button" : "什么是套现？",
+		"feedback" : "信用卡透支取现不同于套现，是信用卡本身固有的功能之一。额度根据持卡人用卡情况设定，最高不超过持卡人信用额度的50%。",
+		"info" : "<br><div class=\"infodiv\"><p>信用卡套现是指持卡人不是通过正常合法手续（ATM或柜台）提取现金，而通过其他手段将卡中信用额度内的资金以现金的方式套取，同时又不支付银行提现费用（利息）的行为。</p><h4>支付宝“套现”?</h4><p>在淘宝等购物网站上用信用卡支付后，买方由于拍错提出取消交易。卖方关闭交易后，买方通过信用卡支付的资金便留在支付宝账户中，这样就实现了一次“套现”。为了防止套现，支付宝限制了每笔交易的最高金额和每天的交易次数。</p></div>"
+   	}
 ]

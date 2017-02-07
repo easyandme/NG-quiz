@@ -4,14 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Maxim_Xu">
 	<meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="format-detection" content="telephone=no">
 	<meta name="keywords" content="blank">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
-	<title>关于买票你需要知道的一切</title>
-	<link rel="stylesheet" type="text/css" href="css/quiz.css">
+	<title>信用卡八问 | 关于信用卡你应该知道的事</title>                                        
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">                        
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
 </head>
 <body>
     <div id="myQuiz" ng-controller="QuizController">
-    	<h1>Test Your Knowledge: <span>Saturn</span></h1>
+    	<h1 ng-show="activeQuestion === -1">信用卡八问</h1>
     	<div class="progress">
     	    <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}
             {{myQuestion.questionState === 'answered'?'answered':'unanswered'}}
@@ -19,9 +21,12 @@
             " ng-repeat="myQuestion in myQuestions"></div>
     	</div>
     	<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
-    		<h2>Welcome</h2>
-    		<p>Click begin to test your knowledge of Saturn</p>
-    	    <p class="btn" ng-click="activeQuestion = 0">开始</p>
+    		<h2></h2>
+            <div>
+            <img class="intro_image" src="images/intro.jpg" />
+            </div>
+    		<p class="introtext">手头的信用卡，你真的足够了解它吗？</p>
+    	    <p class="btn start" ng-click="activeQuestion = 0">开始</p>
     	</div>
     	<div class="question
            {{$index === activeQuestion ? 'active' : 'inactive'}}
@@ -33,26 +38,42 @@
             image:Answer.image,
             selected:isSelected($parent.$index,$index), correct: isCorrect($parent.$index,$index)
             }"
-            ng-style="{ 'background-image':'url({{Answer.image}})' }"
+            ng-style="{ 'background-image':'url({{Answer.image}})','background-position':'{{Answer.pos}}','background-size':'{{Answer.size}}' }"
             ng-click="selectAnswer($parent.$index,$index)"
             ng-repeat="Answer in myQuestions[$index].answers">
             {{Answer.text}}
             </p> 
-    		<div class="feedback">
-    			<p ng-show="myQuestion.correctness === 'correct'">You're <strong>correct</strong>.</p>
-    			<p ng-show="myQuestion.correctness === 'incorrect'">Oops! That is not correct.</p>
-    		    <p>{{myQuestion.feedback}}</p>
-    		    <div class="btn" ng-click="selectContinue()">Continue</div>
+    		<div id="info" class="feedback">
+    			<p ng-show="myQuestion.correctness === 'correct'">回答<strong>正确</strong>.</p>
+    			<p ng-show="myQuestion.correctness === 'incorrect'"><strong>哎呦错啦！</strong></p>
+    		    <div ng-bind-html="myQuestion.feedback | html"></div>
+                <a href="#" scroll-to="myQuiz" easing="easeOutCubic" class="btn" ng-click="selectContinue()">下一题</a>
+                <a href="#" scroll-to="info" duration="1250" easing="easeOutQuint" class="btn why" ng-click="resizeHeight();showInfo = !showInfo" ng-hide="myQuestion.info === undefined">{{myQuestion.button}}</a>
+                <div ng-bind-html="myQuestion.info | html" ng-show="showInfo"></div>
     		</div>
     	</div>
+        <img id="developer" alt="developer" width="80" src="images/me.jpg" style="display: inline;">
     	<div class="results {{totalQuestions === activeQuestion?'active':inactive}}">
-    		<h3>Results</h3>
-    		<p>You scored {{percentage}}% by correctly answering {{score}} of {{totalQuestions}} questions.</p>
-    		<div class="share" ng-bind-html="createShareLinks(percentage)"> 
+            <h5>我的知识水平已达到:</h5>
+    		<h3>{{result}}</h3>
+    		<p>{{totalQuestions}}题中回答正确{{score}}题，正确率达到{{percentage}}%！</p>
+    		<div class="share"> 
+            <a class="btn email" id="mqtest" href="http://aquiz.cn/quiz2">音乐商数测试</a>
+            <a class="btn wechat" id="contact" ng-click="addOverlay()" id="wechat">联系开发者</a>
     		</div>
     	</div>
     </div>
+<script type="text/javascript" src="js/fastclick.js"></script>
 <script type="text/javascript" src="js/angular.min.js"></script>
-<script type="text/javascript" src="js/quiz.js"></script>
+<script type="text/javascript" src="js/angular-smooth-scroll.js"></script>
+<script type="text/javascript" src="js/quiz.js"></script> 
+<script async>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+  ga('create', 'UA-38451886-6', 'auto');
+  ga('send', 'pageview'); 
+</script>
 </body>
 </html>
